@@ -4,14 +4,14 @@ version:            0.1.0.0
 
 library fizz-buzz-lib
     exposed-modules:  FizzBuzz
-    build-depends:    base ^>=4.17.2.0
+    build-depends:    base ^>=4.17.0.0
     hs-source-dirs:   
     default-language: Haskell2010
 
 executable unit-testing
     main-is:         Main.hs
     other-modules:   FizzBuzz
-    build-depends:   base ^>=4.17.2.0, fizz-buzz-lib
+    build-depends:   base ^>=4.17.0.0, fizz-buzz-lib
     hs-source-dirs:   
     default-language: Haskell2010
 
@@ -19,6 +19,6 @@ test-suite tests
     type:             exitcode-stdio-1.0
     main-is:          Tests.hs
     other-modules:    FizzBuzz
-    build-depends:    base ^>=4.17.2.0, HUnit ^>=1.6, fizz-buzz-lib
+    build-depends:    base ^>=4.17.0.0, HUnit ^>=1.6, fizz-buzz-lib
     hs-source-dirs: 
     default-language: Haskell2010
